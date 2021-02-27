@@ -37,7 +37,7 @@ const Layout = ({children, match, history}) => {
 
       {isAuth() && isAuth().role === "admin" && (
         <li className="nav-item">
-          <Link className="nav-link" style={isActive("/admin")} to="/admin">
+          <Link className="nav-link" style={isActive("/admin.jsx")} to="/admin.jsx">
             {isAuth().name} The Admin
           </Link>
         </li>
@@ -45,7 +45,7 @@ const Layout = ({children, match, history}) => {
 
       {isAuth() && isAuth().role === "subscriber" && (
         <li className="nav-item">
-          <Link className="nav-link" style={isActive("/private")} to="/private">
+          <Link className="nav-link" style={isActive("/private.jsx")} to="/private.jsx">
             {isAuth().name}
           </Link>
         </li>
